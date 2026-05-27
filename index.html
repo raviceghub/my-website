@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Shopping Website</title>
+    <title>Home</title>
     style.css
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TGV3SQ4W');</script>
+<!-- End Google Tag Manager -->
+    
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGV3SQ4W"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-<h1>🛒 My Shop</h1>
+<h1 style="color:blue">Welcome to My Website</h1>
+<p>This is Home Page</p>
 
-<div class="products">
+<button onclick="goToPage('home.html')">Home</button>
+<button onclick="goToPage('about.html')">About Us</button>
+<button onclick="goToPage('contact.html')">Contact Us</button>
 
-    <div class="product">
-        <h3>Product 1</h3>
-        <p>Price: ₹500</p>
-        <button onclick="addToCart('Product 1', 500)">Add to Cart</button>
-    </div>
+<h3>Leave a Comment:</h3>
 
-    <div class="product">
-        <h3>Product 2</h3>
-        <p>Price: ₹800</p>
-        <button onclick="addToCart('Product 2', 800)">Add to Cart</button>
-    </div>
-
-    <div class="product">
-        <h3>Product 3</h3>
-        <p>Price: ₹1200</p>
-        <button onclick="addToCart('Product 3', 1200)">Add to Cart</button>
-    </div>
-
-</div>
-
-<h2>🛍️ Cart</h2>
-<ul id="cart"></ul>
-
-<p><b>Total: ₹<span id="total">0</span></b></p>
-
-<button onclick="checkout()">Checkout</button>
-
-script.jsscript>
+<form>
+  <textarea rows="5" cols="40" placeholder="Enter your comment here"></textarea><br><br>
+  <button type="submit">Submit</button>
+</form>
+script.js>
 
 </body>
 </html>
