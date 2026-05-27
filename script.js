@@ -1,15 +1,11 @@
-document.querySelector("button").addEventListener("click", function() {
-    const comment = document.querySelector("textarea").value;
+function addToCart(product, price) {
 
-    if (comment.trim() === "") {
-        alert("Please enter a comment");
-        return;
-    }
+    // your existing logic...
 
-    const commentBox = document.createElement("p");
-    commentBox.textContent = comment;
-
-    document.body.appendChild(commentBox);
-
-    document.querySelector("textarea").value = "";
-});
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+        event: "add_to_cart",
+        product_name: product,
+        product_price: price
+    });
+}
